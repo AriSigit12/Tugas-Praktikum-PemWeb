@@ -1,0 +1,79 @@
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif; /* Mengatur font */
+    background-color: #f4f4f4; /* Warna latar belakang */
+    padding: 20px; /* Menambahkan padding di sekitar body */
+}
+
+/* Gaya untuk judul */
+h2 {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    font-size: 24px; /* Ukuran font untuk judul */
+    color: #4e54c8; /* Warna teks judul */
+    margin-bottom: 20px; /* Jarak di bawah judul */
+}
+
+/* Gaya untuk form dan input */
+form {
+    background-color: #fff; /* Warna latar belakang untuk form */
+    padding: 20px; /* Padding di dalam form */
+    border-radius: 5px; /* Membuat sudut form melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada form */
+}
+
+/* Gaya untuk label */
+label {
+    display: block; /* Mengatur label menjadi blok untuk baris baru */
+    margin-top: 10px; /* Jarak di atas label */
+}
+
+/* Gaya untuk input teks */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%; /* Lebar penuh */
+    padding: 10px; /* Padding di dalam input */
+    margin-top: 5px; /* Jarak di atas input */
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 3px; /* Sudut input melengkung */
+}
+
+/* Gaya untuk pesan error */
+.error {
+    color: red; /* Warna merah untuk pesan error */
+    font-size: 12px; /* Ukuran font untuk pesan error */
+}
+
+/* Gaya tambahan untuk container password */
+.password-container {
+    position: relative; /* Posisi relatif untuk ikon mata */
+    display: flex; /* Mengatur elemen dalam satu baris */
+    align-items: center; /* Menyelaraskan elemen di tengah */
+}
+
+/* Gaya untuk ikon mata */
+.toggle-password {
+    position: absolute; /* Posisi absolut untuk menempatkan ikon */
+    right: 10px; /* Jarak dari sisi kanan */
+    cursor: pointer; /* Mengubah kursor saat hover di atas ikon */
+    font-size: 20px; /* Ukuran font untuk ikon */
+    color: #4e54c8; /* Warna ikon */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+.toggle-password:hover {
+    color: #373dbf; /* Warna saat hover di atas ikon */
+}
+
+/* Gaya untuk tombol submit */
+button {
+    background-color: #4e54c8; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 10px 15px; /* Padding di dalam tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 3px; /* Sudut tombol melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover di atas tombol */
+    margin-top: 10px; /* Jarak di atas tombol */
+}
+
+button:hover {
+    background-color: #373dbf; /* Warna saat hover di atas tombol */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding untuk dokumen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur viewport untuk responsivitas -->
+    <title>Formulir Pendaftaran Pengguna</title> <!-- Judul halaman -->
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS eksternal -->
+</head>
+<body>
+
+<!-- Judul Formulir -->
+<h2>Formulir Pendaftaran Pengguna</h2>
+
+<!-- Formulir pendaftaran -->
+<form id="registrationForm">
+    <!-- Input untuk username -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <p class="error" id="usernameError"></p> <!-- Menampilkan pesan error untuk username -->
+
+    <!-- Input untuk email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <p class="error" id="emailError"></p> <!-- Menampilkan pesan error untuk email -->
+
+    <!-- Input untuk password dengan ikon mata -->
+    <label for="password">Password:</label>
+    <div class="password-container"> <!-- Container untuk password dan ikon mata -->
+        <input type="password" id="password" name="password" required>
+        <span class="toggle-password" id="togglePassword">&#128065;</span> <!-- Ikon mata untuk menampilkan/menyembunyikan password -->
+    </div>
+    <p class="error" id="passwordError"></p> <!-- Menampilkan pesan error untuk password -->
+
+    <!-- Input untuk konfirmasi password -->
+    <label for="confirmPassword">Konfirmasi Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+    <p class="error" id="confirmPasswordError"></p> <!-- Menampilkan pesan error untuk konfirmasi password -->
+    
+    <!-- Tombol untuk submit formulir -->
+    <button type="submit">Daftar</button>
+</form>
+
+<script src="validasi.js"></script> <!-- Menghubungkan file JavaScript eksternal -->
+</body>
+</html>
